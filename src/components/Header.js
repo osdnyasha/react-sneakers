@@ -6,7 +6,7 @@ function Header(props) {
 
     return (
         <header className="header">
-            <Link to="/">
+            <Link to={process.env.PUBLIC_URL + '/'}>
                 <div className="header__info">
                     <div alt="logo" className="header__logo"></div>
                     <div className="header__title">
@@ -35,7 +35,7 @@ function Header(props) {
                         </span>
                     </li>
                     <li className="cart-controls__list">
-                        <Link to="/favorites">
+                        <Link to={process.env.PUBLIC_URL + '/favorites'}>
                             <div
                                 className="cart-controls__img cart-controls__img-bookmark"
                                 alt="bookmark logo"
@@ -43,7 +43,7 @@ function Header(props) {
                         </Link>
                     </li>
                     <li className="cart-controls__list">
-                        <Link to="/orders">
+                        <Link to={process.env.PUBLIC_URL + '/orders'}>
                             <div
                                 className="cart-controls__img cart-controls__img-user"
                                 alt="user logo"
