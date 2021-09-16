@@ -11,14 +11,14 @@ function Cart({ items = [], onClickOverlay, removeItem }) {
     const orderFn = async () => {
         try {
             const { data } = await axios.post(
-                '/orders',
+                'https://60e35ddc6c365a0017839288.mockapi.io/orders',
                 {
                     items: cartCards,
                 }
             );
             cartCards.forEach((item, index) => {
                 axios.delete(
-                    `/cart/${
+                    `https://60e35ddc6c365a0017839288.mockapi.io/cart/${
                         index + 1
                     }`
                 );

@@ -24,13 +24,13 @@ function App() {
                 const [cartItemsResponse, favoritesResponse, itemsResponse] =
                     await Promise.all([
                         axios.get(
-                            '/cart'
+                            'https://60e35ddc6c365a0017839288.mockapi.io/cart'
                         ),
                         axios.get(
-                            '/favorite'
+                            'https://60e35ddc6c365a0017839288.mockapi.io/favorite'
                         ),
                         axios.get(
-                            '/items'
+                            'https://60e35ddc6c365a0017839288.mockapi.io/items'
                         ),
                     ]);
 
@@ -54,14 +54,14 @@ function App() {
             );
             if (duplicate && duplicate.itemId !== undefined) {
                 axios.delete(
-                    `/cart/${duplicate.itemId}`
+                    `https://60e35ddc6c365a0017839288.mockapi.io/cart/${duplicate.itemId}`
                 );
                 setCartCards((prev) =>
                     prev.filter((item) => Number(item.id !== Number(obj.id)))
                 );
             } else {
                 axios.post(
-                    '/cart',
+                    'https://60e35ddc6c365a0017839288.mockapi.io/cart',
                     obj
                 );
                 setCartCards((prev) => [...prev, obj]);
@@ -93,11 +93,11 @@ function App() {
         try {
             if (favorites.find((item) => item.id === obj.id)) {
                 axios.delete(
-                    `/favorite/${obj.id}`
+                    `https://60e35ddc6c365a0017839288.mockapi.io/favorite/${obj.id}`
                 );
             } else {
                 const { data } = await axios.post(
-                    '/favorite',
+                    'https://60e35ddc6c365a0017839288.mockapi.io/favorite',
                     obj
                 );
                 setFavorites((prev) => [...prev, data]);

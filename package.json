@@ -3,13 +3,11 @@
     "version": "0.1.0",
     "private": true,
     "homepage": "http://osdnyasha.github.io/react-sneakers",
-    "proxy": "https://60e35ddc6c365a0017839288.mockapi.io/",
     "dependencies": {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
         "axios": "^0.21.1",
-        "gh-pages": "^3.2.3",
         "node-sass": "^4.14.1",
         "react": "^17.0.2",
         "react-content-loader": "^6.0.3",
