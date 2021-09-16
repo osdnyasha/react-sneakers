@@ -40,7 +40,7 @@ function Cart({ items = [], onClickOverlay, removeItem }) {
                     onClick={onClickOverlay}
                     width={20}
                     height={20}
-                    src="/img/icons/remove.svg"
+                    src="img/icons/remove.svg"
                     alt=""
                 ></img>
 
@@ -70,7 +70,7 @@ function Cart({ items = [], onClickOverlay, removeItem }) {
                                             alt="card img"
                                             width={16}
                                             height={16}
-                                            src="/img/icons/remove.svg"
+                                            src="img/icons/remove.svg"
                                         />
                                     </div>
                                 </div>
@@ -105,7 +105,7 @@ function Cart({ items = [], onClickOverlay, removeItem }) {
                     <Info
                         title={'Заказ оформлен!'}
                         description={`Ваш заказ #${orderId} скоро будет передан курьерской доставке`}
-                        img={'/img/cart-ordered.svg'}
+                        img={'img/cart-ordered.svg'}
                     />
                 ) : (
                     <Info
@@ -113,7 +113,7 @@ function Cart({ items = [], onClickOverlay, removeItem }) {
                         description={
                             'Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.'
                         }
-                        img={'/img/cart-empty.png'}
+                        img={'img/cart-empty.png'}
                     />
                 )}
             </div>

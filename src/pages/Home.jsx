@@ -41,7 +41,7 @@ function Home({
                         className="search__img"
                         width={14.24}
                         height={14.25}
-                        src="/img/icons/search.svg"
+                        src="img/icons/search.svg"
                         alt=""
                     ></img>
                     {searchValue && (
@@ -50,7 +50,7 @@ function Home({
                             onClick={() => setSearchValue('')}
                             width={14.24}
                             height={14.25}
-                            src="/img/icons/remove.svg"
+                            src="img/icons/remove.svg"
                             alt=""
                         ></img>
                     )}
